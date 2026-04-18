@@ -1,0 +1,40 @@
+{
+  "name": "playwright-bdd-framework",
+  "version": "1.0.0",
+  "description": "Playwright + BDD (playwright-bdd) showcase using Sauce Demo (saucedemo.com)",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "install:all": "npm install && npx playwright install --with-deps chromium",
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "report": "playwright show-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "gherkin",
+    "playwright-bdd"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@eslint/js": "^9.25.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^22.15.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^9.25.0",
+    "eslint-config-prettier": "^10.1.2",
+    "playwright-bdd": "^8.5.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0"
+  }
+}

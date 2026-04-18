@@ -1,0 +1,73 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Environment Variables (NEVER COMMIT SECRETS)
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# TypeScript Build Output
+# =========================
+dist/
+*.tsbuildinfo
+
+# =========================
+# Playwright BDD Generated Files
+# =========================
+.features-gen/
+
+# =========================
+# Generated auth (Playwright storageState from global.setup.ts)
+# =========================
+TestFramework/Auth/auth.json
+
+# =========================
+# Playwright Artifacts
+# =========================
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# =========================
+# Cucumber / BDD Reports
+# =========================
+cucumber-report/
+
+# =========================
+# Framework Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Optional Feature Tooling
+# =========================
+Features/.expanded/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# IDE / Editors
+# =========================
+.vs/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Testing / Reporting Tools (Optional)
+# =========================
+allure-results/
+allure-report/
+BDD-Steps-Performance-Report/

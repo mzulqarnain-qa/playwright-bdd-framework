@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.feature": "feature"
+  },
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "cucumberautocomplete.steps": ["TestFramework/Steps/**/*.{ts,js}"],
+  "cucumberautocomplete.syncfeatures": ["Features/**/*.feature"],
+  "cucumberautocomplete.strictGherkinCompletion": false,
+  "cucumberautocomplete.strictGherkinValidation": false,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.onTypeFormat": true,
+  "cucumber.features": ["Features/**/*.feature"],
+  "cucumber.glue": ["TestFramework/Steps/**/*.ts"]
+}

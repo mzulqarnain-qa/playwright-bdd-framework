@@ -15,17 +15,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
-      - name: Install dependencies (clean)
+      - name: Install dependencies
         run: npm ci
 
       - name: Lint (ESLint)
         run: npm run lint
 
-      - name: Install Playwright Chromium (with OS deps)
-        run: npx playwright install --with-deps chromium
+      - name: Install Playwright Browsers
+        run: npx playwright install
 
       - name: Create .env file from secrets
         run: |
@@ -33,7 +33,7 @@ jobs:
           echo "STANDARD_USER=${{ secrets.STANDARD_USER }}" >> .env
           echo "STANDARD_PASS=${{ secrets.STANDARD_PASS }}" >> .env
 
-      - name: Run tests (Chrome only)
+      - name: Run tests
         run: npm test
         env:
           CI: true
